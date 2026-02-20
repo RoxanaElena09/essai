@@ -1,3 +1,80 @@
-body{
-    color:red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav{
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #00EED0;
+   
+}
+
+.hero-title{
+    color: #00EED0;
+}
+
+.hero-subtitle{
+    color: #00EED0;
+}
+
+.link-email-button{
+    background-color: #00EED0;
+    border-radius: 25px;
+    color: #02153D;
+   padding: 0.8rem 1.2rem;
+   align-self: flex-start;
+   
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to bottom, #02153D 85%, #00EED0 91%);
+    padding-left: 150px;
+    padding-right: 80px;
+    padding-bottom: 60px
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bi-envelope-fill{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.me{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00EED0;
+}
+
+
+@media (max-width: 600px) {
+ .me{
+    display:none
+ }
 }
