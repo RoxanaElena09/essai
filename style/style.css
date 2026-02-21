@@ -133,4 +133,10 @@ header, .hero{
     font-size: 1rem;
     margin-right: 0.5rem;
 }
+
+.link-email-button:active{
+    background-color: #00EED0;
+    color: #02153D;
+     transform:scale(0.96);
+}
 }
