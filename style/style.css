@@ -22,7 +22,7 @@ a{
    
 }
 
-a::after{
+nav ul li a::after{
     content: '';
     position:absolute;
     width: 0;
@@ -56,6 +56,7 @@ nav ul li a:hover::after{
     border: 2px solid #00EED0;
      transition:0.25s ease;
 }
+
 .link-email-button:hover{
     background-color: #02153D;
     color: #00EED0;
@@ -71,7 +72,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background: linear-gradient(to bottom, #02153D 85%, #00EED0 91%);
+    background: linear-gradient(to bottom, #02153D 85%, #00EED0 99%);
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 90px
@@ -118,7 +119,10 @@ header{
 header, .hero{
     justify-content: center;
     text-align: center;
-    padding: auto;
+   header{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 }
 .hero-title{
     font-size: 2rem;
@@ -132,11 +136,5 @@ header, .hero{
 .bi-envelope-fill{
     font-size: 1rem;
     margin-right: 0.5rem;
-}
-
-.link-email-button:active{
-    background-color: #00EED0;
-    color: #02153D;
-     transform:scale(0.96);
 }
 }
