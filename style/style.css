@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: kanit, sans-serif;
+  line-height: 1,5;
 }
 ul {
   display: flex;
@@ -45,13 +46,18 @@ nav ul li a:hover::after {
   color: #00eed0;
 }
 
-.link-email-button {
+.link-email-button, .link-cv-button {
   background-color: #00eed0;
   border-radius: 25px;
   color: #02153d;
   text-align: center;
   border: 2px solid #00eed0;
   transition: 0.25s ease;
+}
+
+.link-cv-button{
+    padding: 0.7rem;
+    margin-bottom: 5rem;
 }
 
 .link-email-button:hover {
@@ -82,7 +88,7 @@ header {
   gap: 1rem;
 }
 
-.bi-envelope-fill {
+.bi-envelope-fill, .bi-arrow-down-square-fill {
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
@@ -94,8 +100,6 @@ header {
   object-fit: cover;
   border: 2px solid #00eed0;
 }
-
-
 
 footer {
   display: flex;
@@ -118,7 +122,36 @@ footer {
   gap: 12px;
 }
 
+section{
+  padding-left: 150px;
+  padding-right: 150px;  
+}
 
+.titre-section {
+  color: #02153d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 300;
+}
+
+.p-about-me {
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+
+.section-bg{
+  width:100%;
+  background: rgba(205,226,223,0.25);
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.container{
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
 @media (max-width: 700px) {
   .me {
     display: none;
@@ -169,7 +202,7 @@ footer {
   footer{
     justify-content: center;
     text-align: center;
-     padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 }
