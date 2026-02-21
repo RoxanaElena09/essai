@@ -36,7 +36,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.hero-title {
+.hero-title{
   color: #00eed0;
   font-size: 2.5rem;
 }
@@ -94,6 +94,30 @@ header {
   object-fit: cover;
   border: 2px solid #00eed0;
 }
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(to top, #02153d 90%, #00eed0 99%);
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 40px;
+}
+
+.title-footer {
+  margin-top: 5rem;
+  color: #00eed0;
+  font-size: 2.5rem;
+}
+
+.contact-nav ul{
+  flex-direction: column;
+  gap: 12px;
+}
+
 
 @media (max-width: 700px) {
   .me {
