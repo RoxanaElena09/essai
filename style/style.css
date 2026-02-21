@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: kanit, sans-serif;
 }
 ul{
     display: flex;
@@ -16,11 +17,31 @@ nav{
 a{
     text-decoration: none;
     color: #00EED0;
+    position: relative;
+    transition: all 0.3s ease;
    
 }
 
+a::after{
+    content: '';
+    position:absolute;
+    width: 0;
+    height: 2px;
+    background: #00EED0;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
 .hero-title{
     color: #00EED0;
+    font-size: 2.5rem;  
+    
 }
 
 .hero-subtitle{
@@ -31,9 +52,19 @@ a{
     background-color: #00EED0;
     border-radius: 25px;
     color: #02153D;
-   padding: 0.8rem 1.2rem;
-   align-self: flex-start;
-   
+    text-align: center;
+    border: 2px solid #00EED0;
+     transition:0.25s ease;
+}
+.link-email-button:hover{
+    background-color: #02153D;
+    color: #00EED0;
+}
+
+.link-email-button:active{
+    background-color: #00EED0;
+    color: #02153D;
+     transform:scale(0.96);
 }
 
 header{
@@ -42,8 +73,8 @@ header{
     gap: 30px;
     background: linear-gradient(to bottom, #02153D 85%, #00EED0 91%);
     padding-left: 150px;
-    padding-right: 80px;
-    padding-bottom: 60px
+    padding-right: 150px;
+    padding-bottom: 90px
 }
 
 .hero{
@@ -73,8 +104,33 @@ header{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
  .me{
     display:none
  }
+
+ ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header, .hero{
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+}
+.hero-title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.hero-subtitle{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.bi-envelope-fill{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
 }
