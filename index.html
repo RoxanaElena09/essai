@@ -21,10 +21,10 @@
   <header>
     <nav>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -36,24 +36,24 @@
         <a href="" class="link-email-button"><i class="bi bi-envelope-fill"></i>Email me</a>
       </div>
 
-      <img src="img/moi.png" alt="Portrait of Roxana" class="me">
+      <img src="public/img/moi.png" alt="Portrait of Roxana" class="me">
 
     </div>
   </header>
 
   <main>
 
-    <section class="section about-me">
+    <section class="section about-me" id="about">
       <h2 class="titre-section">About me</h2>
-      <p class="p-about-me">I discovered web development through curiosity — and quickly fell in love with turning ideas
-        into real,
-        living websites.
+      <p class="p-about-me">I discovered web development through curiosity —
+        and quickly fell in love with turning ideas
+        into real,living websites.
         Passionate about front-end, always learning,
         and speaking multiple languages, I’m building my path step by step..</p>
       <a href="" class="link-cv-button"> <i class="bi bi-arrow-down-square-fill"></i>Download my CV </a>
     </section>
 
-    <section class="section-bg values">
+    <section class=" section section-bg values">
       <div class="container">
         <h2 class="titre-section">Values</h2>
         <div class="cards">
@@ -63,7 +63,7 @@
 
               <div class="card-front">
                 <i class="ph ph-devices"></i>
-                <h3 class="title-card">Responsive</h3>
+                <h3 class="title-card">Clean code</h3>
               </div>
 
               <div class="card-back" aria-hidden="true">
@@ -111,10 +111,113 @@
 
     </section>
 
+    <section class="section skills" id="skills">
+      <h2 class="titre-section">Skills</h2>
+
+      <ul class="skills-grid" role="list">
+        <li class="skill">
+          <img src="public/svg/html.svg" alt="HTML5" loading="lazy">
+          <span>HTML5</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/css.svg" alt="CSS3" loading="lazy">
+          <span>CSS3</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/bootstrap.svg" alt="Bootstrap" loading="lazy">
+          <span>Bootstrap</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/javascript.svg" alt="JavaScript" loading="lazy">
+          <span>JavaScript</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/vuedotjs.svg" alt="vuejs" loading="lazy">
+          <span>VueJS</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/github.svg" alt="Git" loading="lazy">
+          <span>Git</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/figma.svg" alt="Figma" loading="lazy">
+          <span>Figma</span>
+        </li>
+
+      </ul>
+    </section>
+
+
+    <section class="section section-bg how" id="how">
+      <h2 class="titre-section">How I work</h2>
+      <p class="how-lead">My step-by-step process to build clean and responsive interfaces.</p>
+
+      <ol class="timeline" role="list">
+        <li class="timeline__item">
+          <h3 class="titre-work">Understand and plan</h3>
+          <p>I analyze the needs, structure the content and define the layout.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Design layout</h3>
+          <p>I create simple wireframes and focus on hierarchy and spacing.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Build interfaces</h3>
+          <p>I turn designs into clean, responsive interfaces.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Test and improve</h3>
+          <p>I test on different devices and refine every detail.</p>
+        </li>
+      </ol>
+    </section>
+
+  <section class="section" id="projects">
+  <h2 class="titre-section">My projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <img src="public/img/project1.png" alt="project1">
+      <p class="project-caption">Simple login page built with HTML and CSS to practice front-end fundamentals.</p>
+    </div>
+
+    <div class="project hidden">
+      <img src="public/img/project2.png" alt="project2">
+      <p class="project-caption">
+        Elegant hero section built with HTML and CSS, featuring fixed navigation, a call-to-action, and modern UI design.
+      </p>
+    </div>
+
+    <div class="project hidden">
+      <img src="public/img/project3.jpg" alt="project3">
+      <p class="project-caption">404 Not Found Page - UI design and front-end integration for a weather website</p>
+    </div>
+
+  </div>
+
+  <a class="link-see-button" id="seeMoreBtn" type="button">
+  <i class="bi bi-arrow-down-square-fill"></i> See more
+  </a>
+</section>
+
+   
+
+
+
   </main>
 
   <footer>
-    <h1 class="title-footer">Get in touch</h1>
+    <h1 class="title-footer" id="contact">Get in touch</h1>
 
     <nav class="contact-nav">
       <ul>
@@ -134,28 +237,41 @@
   </footer>
 
 
-  <script>
-    const cards = document.querySelectorAll('.card-flip');
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-    cards.forEach(card => {
-      card.addEventListener('click', (e) => {
-        e.stopPropagation(); // empêche le clic de remonter à la page
-
-        // ferme toutes les autres cartes
-        cards.forEach(c => {
-          if (c !== card) c.classList.remove('is-flipped');
-        });
-
-        // toggle celle cliquée
-        card.classList.toggle('is-flipped');
-      });
+  // --- Cards flip ---
+  const cards = document.querySelectorAll(".card-flip");
+  cards.forEach(card => {
+    card.addEventListener("click", (e) => {
+      e.stopPropagation();
+      cards.forEach(c => { if (c !== card) c.classList.remove("is-flipped"); });
+      card.classList.toggle("is-flipped");
     });
+  });
 
-    // clic ailleurs = on ferme tout
-    document.addEventListener('click', () => {
-      cards.forEach(card => card.classList.remove('is-flipped'));
-    });
-  </script>
+  document.addEventListener("click", () => {
+    cards.forEach(card => card.classList.remove("is-flipped"));
+  });
+
+  // --- See more projects (robuste) ---
+  const btn = document.getElementById("seeMoreBtn");
+  const projects = document.querySelector(".projects");
+
+  if (!btn || !projects) return;
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    projects.classList.add("is-open"); // affiche tout
+    btn.style.display = "none";
+  });
+
+  
+
+});
+</script>
 </body>
 
 </html>
