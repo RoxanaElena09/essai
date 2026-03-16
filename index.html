@@ -9,10 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico">
 
 </head>
 
@@ -21,6 +20,7 @@
   <header>
     <nav>
       <ul>
+        <li><a href="index.html"><img src="public/img/logo.png" alt="Page d'accueil" class="logo"></a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -31,13 +31,15 @@
     <div class="hero">
 
       <div class="hero-text">
-        <h1 class="hero-title">Hi, I'm Roxana</h1>
+        <h1 class="hero-title">
+          Hi, I'm <span class="typing" id="typing-name"></span>
+        </h1>
         <p class="hero-subtitle">Junior Front-End Developer</p>
         <a href="mailto:roxana.frontend@gmail.com?subject=Contact from your portfolio" target="_blank" rel="noopener"
           class="link-email-button"><i class="bi bi-envelope-fill"></i>Email me</a>
       </div>
 
-      <img src="public/img/moi.png" alt="Portrait of Roxana" class="me">
+      <img src="public/img/moi.png" alt="Portrait of Roxana" class="me" aria-hidden="true">
 
     </div>
   </header>
@@ -51,7 +53,8 @@
         into real, living websites.
         Passionate about front-end, always learning,
         and speaking multiple languages, I’m building my path step by step..</p>
-      <a href="" class="link-cv-button"> <i class="bi bi-arrow-down-square-fill"></i>Download my CV </a>
+      <a href="public/cv/cv_roxana_popescu_en.pdf" class="link-cv-button"> <i
+          class="bi bi-arrow-down-square-fill"></i>Download my CV </a>
     </section>
 
     <section class=" section section-bg values">
@@ -227,56 +230,104 @@
             rel="noopener">roxana.frontend@gmail.com <i class="bi bi-envelope-fill"></i></a></li>
         <li><a href="https://github.com/RoxanaElena09">https://github.com/RoxanaElena09<i class="bi bi-github"></i></a>
         </li>
-        <li><a href="www.linkedin.com/in/roxana-elena-popescu">www.linkedin.com/in/roxana-elena-popescu<i
+        <li><a href="https://www.linkedin.com/in/roxana-elena-popescu/">www.linkedin.com/in/roxana-elena-popescu<i
               class="bi bi-linkedin"></i></a></li>
       </ul>
     </nav>
 
     <nav>
       <ul>
-        <li><a href="">Legal Notice</a></li>
-        <li><a href="">Privacy Policy</a></li>
+        <li><a href="legal_notice.html">Legal Notice</a></li>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
       </ul>
     </nav>
 
   </footer>
 
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
+  /* ---------- Typing effect loop ---------- */
 
-      // --- Cards flip ---
-      const cards = document.querySelectorAll(".card-flip");
-      cards.forEach(card => {
-        card.addEventListener("click", (e) => {
-          e.stopPropagation();
-          cards.forEach(c => { if (c !== card) c.classList.remove("is-flipped"); });
-          card.classList.toggle("is-flipped");
-        });
+  const typingElement = document.getElementById("typing-name");
+
+  const words = [
+    "Roxana",
+
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+      typingElement.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1400);
+        return;
+      }
+
+    } else {
+      typingElement.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 70 : 120);
+  }
+
+  typeEffect();
+
+  /* ---------- Cards flip ---------- */
+
+  const cards = document.querySelectorAll(".card-flip");
+
+  cards.forEach(card => {
+    card.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      cards.forEach(c => {
+        if (c !== card) c.classList.remove("is-flipped");
       });
 
-      document.addEventListener("click", () => {
-        cards.forEach(card => card.classList.remove("is-flipped"));
-      });
-
-      // --- See more projects (robuste) ---
-      const btn = document.getElementById("seeMoreBtn");
-      const projects = document.querySelector(".projects");
-
-      if (!btn || !projects) return;
-
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        projects.classList.add("is-open"); // affiche tout
-        btn.style.display = "none";
-      });
-
-
-
+      card.classList.toggle("is-flipped");
     });
-  </script>
+  });
+
+  document.addEventListener("click", () => {
+    cards.forEach(card => card.classList.remove("is-flipped"));
+  });
+
+  /* ---------- See more projects ---------- */
+
+  const btn = document.getElementById("seeMoreBtn");
+  const projects = document.querySelector(".projects");
+
+  if (btn && projects) {
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      projects.classList.add("is-open");
+      btn.style.display = "none";
+    });
+
+  }
+
+});
+</script>
 </body>
 
 </html>

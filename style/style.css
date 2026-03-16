@@ -2,12 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: kanit, sans-serif;
+  font-family: 'Manrope', sans-serif;
   line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.logo{
+  width: auto;
+  height: 40px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -116,6 +127,22 @@ header {
   margin-bottom: 3rem;
 }
 
+.typing {
+  display: inline-block;
+  min-width: 7ch; /* păstrează locul pentru nume, ca să nu sară layout-ul */
+  border-right: 3px solid #00eed0;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -151,6 +178,12 @@ footer {
   padding-left: 150px;
   padding-right: 150px;
   padding-bottom: 40px;
+}
+
+.contact-nav a{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .title-footer {
@@ -426,7 +459,8 @@ section {
   }
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 880px) {
   .me {
     display: none;
   }
@@ -436,6 +470,11 @@ section {
     flex-direction: column;
     gap: 15px;
   }
+
+.logo{
+  width: auto;
+  height: 25px;
+}
 
   header,
   .hero {
@@ -510,4 +549,94 @@ section {
   .card {
     width: min(300px, 100%);
   }
+}
+
+/* ===============================
+   Legal pages (Privacy / Legal Notice)
+   =============================== */
+
+.legal-page {
+  background: #ffffff;
+  color: #02153d;
+}
+
+.legal-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 5rem;
+}
+
+.legal-content h1 {
+  color: #02153d;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.legal-content h2 {
+  color: #02153d;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.legal-content p {
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.legal-content a {
+  color: #02153d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: 0.25s ease;
+}
+
+.legal-content a:hover {
+  color: #00eed0;
+}
+
+/* mic highlight pentru blocul de contact */
+
+.legal-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #00eed0;
+  background: rgba(205, 226, 223, 0.25);
+}
+
+/* text introductiv */
+
+.legal-intro {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 880px) {
+
+  .legal-content {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .legal-content h1 {
+    font-size: 2rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .legal-content p {
+    font-size: 0.95rem;
+  }
+
 }
