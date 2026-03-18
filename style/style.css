@@ -74,6 +74,11 @@ nav ul li a:hover::after {
 
 .link-cv-button {
   padding: 0.7rem;
+  border: 1px solid #02153d;
+}
+
+.link-cv-button:hover {
+  border: 1px solid #00eed0;
 }
 
 .link-email-button:hover,
@@ -91,7 +96,7 @@ nav ul li a:hover::after {
   background-color: #00eed0;
   border-radius: 25px;
   color: #02153d;
-  border: 2px solid #00eed0;
+  border: 1px solid #02153d;
   transition: 0.25s ease;
   padding: 0.7rem 1.4rem;
   text-decoration: none;
@@ -100,6 +105,7 @@ nav ul li a:hover::after {
 .link-see-button:hover {
   background-color: #02153d;
   color: #00eed0;
+   border: 1px solid #00eed0;
 }
 
 /* cache les projets à partir du 2e */

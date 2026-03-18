@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RoxanaWeb | Portfolio Développeuse Front-End</title>
+    <meta name="description"
+        content="RoxanaWeb est le portfolio de Roxana, développeuse front-end, qui crée des sites web propres, responsives et accessibles avec HTML, CSS, JavaScript, Vue.js et Figma.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Roxana Popescu">
+    <meta name="keywords"
+        content="RoxanaWeb, Roxana Popescu, développeuse front-end, portfolio développeuse front-end, HTML, CSS, JavaScript, Vue.js, responsive web design, sites web accessibles, développeuse web">
+    <link rel="canonical" href="https://roxanaweb.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RoxanaWeb | Développeuse Front-End">
+    <meta property="og:description"
+        content="Portfolio de Roxana, développeuse front-end, créant des sites web propres, responsives et accessibles.">
+    <meta property="og:url" content="https://roxanaweb.com/">
+    <meta property="og:image" content="https://roxanaweb.com/public/img/logo.jpg">
+    <meta property="og:image:alt" content="Aperçu du logo du portfolio RoxanaWeb">
+    <meta property="og:site_name" content="RoxanaWeb">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RoxanaWeb | Développeuse Front-End">
+    <meta name="twitter:description"
+        content="Portfolio de Roxana, développeuse front-end, créant des sites web propres, responsives et accessibles.">
+    <meta name="twitter:image" content="https://roxanaweb.com/public/img/logo.jpg">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="public/img/logo.png" alt="Page d'accueil" class="logo"></a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- LANG SWITCH -->
+                <li class="lang-switch">
+                    <a href="index.html" aria-label="English version">
+                        🇬🇧
+                    </a>
+                    <a href="index-fr.html" aria-label="Version française">
+                        🇫🇷
+                    </a>
+                    <a href="index-ro.html" aria-label="Versiune in romana">
+                        🇷🇴
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Salut, moi c’est <span class="typing" id="typing-name"></span>
+                </h1>
+                <p class="hero-subtitle">Développeuse Front-End</p>
+                <a href="mailto:roxana.frontend@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank"
+                    rel="noopener" class="link-email-button"><i class="bi bi-envelope-fill"
+                        aria-hidden="true"></i>Travaillons
+                    ensemble</a>
+            </div>
+
+            <img src="public/img/moi.png" alt="" class="me" aria-hidden="true">
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section about-me" id="about">
+            <h2 class="titre-section">À propos de moi</h2>
+            <p class="p-about-me">J’ai découvert le développement web par curiosité —
+                et je suis rapidement tombée amoureuse de l’idée de transformer des idées
+                en sites web réels et vivants.
+                Passionnée par le front-end, toujours en train d’apprendre,
+                et parlant plusieurs langues, je construis mon parcours étape par étape.</p>
+            <a href="public/cv/cv_roxana_popescu_fr.pdf" class="link-cv-button"> <i class="bi bi-arrow-down-square-fill"
+                    aria-hidden="true"></i>Télécharger mon CV </a>
+        </section>
+
+        <section class=" section section-bg values">
+            <div class="container">
+                <h2 class="titre-section">Valeurs</h2>
+                <div class="cards">
+
+                    <div class="card-flip">
+                        <div class="card-inner">
+
+                            <div class="card-front">
+                                <i class="ph ph-code" aria-hidden="true"></i>
+                                <h3 class="title-card">Code propre</h3>
+                            </div>
+
+                            <div class="card-back" aria-hidden="true">
+                                <p>HTML sémantique, CSS réutilisable et structure maintenable.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-flip">
+                        <div class="card-inner">
+
+                            <div class="card-front">
+                                <i class="ph ph-devices" aria-hidden="true"></i>
+                                <h3 class="title-card">Responsive</h3>
+                            </div>
+
+                            <div class="card-back" aria-hidden="true">
+                                <p>Mobile-first, mises en page flexibles et design adaptatif.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin .card-flip -->
+
+                    <div class="card-flip">
+                        <div class="card-inner">
+
+                            <div class="card-front">
+                                <i class="bi bi-person-wheelchair" aria-hidden="true"></i>
+                                <h3 class="title-card">Accessibilité</h3>
+                            </div>
+
+                            <div class="card-back" aria-hidden="true">
+                                <p>Marquage accessible, navigation au clavier et design inclusif.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin .card-flip -->
+
+                </div>
+                <!-- fin .cards -->
+            </div>
+
+        </section>
+
+        <section class="section skills" id="skills">
+            <h2 class="titre-section">Compétences</h2>
+
+            <ul class="skills-grid" role="list">
+                <li class="skill">
+                    <img src="public/svg/html.svg" alt="Logo HTML5" loading="lazy">
+                    <span>HTML5</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/css.svg" alt="Logo CSS3" loading="lazy">
+                    <span>CSS3</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/bootstrap.svg" alt="Logo Bootstrap" loading="lazy">
+                    <span>Bootstrap</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/javascript.svg" alt="Logo JavaScript" loading="lazy">
+                    <span>JavaScript</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/vuedotjs.svg" alt="Logo Vuejs" loading="lazy">
+                    <span>VueJS</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/github.svg" alt="Logo Git" loading="lazy">
+                    <span>Git</span>
+                </li>
+
+                <li class="skill">
+                    <img src="public/svg/figma.svg" alt="Logo Figma" loading="lazy">
+                    <span>Figma</span>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <section class="section section-bg how" id="how">
+            <h2 class="titre-section">Ma façon de travailler</h2>
+            <p class="how-lead">Mon processus étape par étape pour créer des interfaces propres et responsives.</p>
+
+            <ol class="timeline" role="list">
+                <li class="timeline__item">
+                    <h3 class="titre-work">Comprendre et planifier</h3>
+                    <p>J’analyse les besoins, structure le contenu et définis la mise en page.</p>
+                </li>
+
+                <li class="timeline__item">
+                    <h3 class="titre-work">Concevoir la mise en page</h3>
+                    <p>Je crée des wireframes simples et me concentre sur la hiérarchie et les espacements.</p>
+                </li>
+
+                <li class="timeline__item">
+                    <h3 class="titre-work">Développer les interfaces</h3>
+                    <p>Je transforme les maquettes en interfaces propres et responsives.</p>
+                </li>
+
+                <li class="timeline__item">
+                    <h3 class="titre-work">Tester et améliorer</h3>
+                    <p>Je teste sur différents appareils et j’améliore chaque détail.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section" id="projects">
+            <h2 class="titre-section">Mes projets</h2>
+
+            <div class="projects">
+
+                <div class="project">
+                    <img src="public/img/project1.webp"
+                        alt="Interface de connexion simple réalisée en HTML et CSS, avec une mise en page propre et un design de formulaire soigné">
+                    <p class="project-caption">Page de connexion simple réalisée en HTML et CSS pour pratiquer les bases
+                        du front-end.</p>
+                </div>
+
+                <div class="project hidden">
+                    <img src="public/img/project2.webp"
+                        alt="Section hero moderne avec navigation fixe, bouton d’appel à l’action et mise en page responsive">
+                    <p class="project-caption">
+                        Section hero élégante réalisée en HTML et CSS, avec navigation fixe, call-to-action et design UI
+                        moderne.
+                    </p>
+                </div>
+
+                <div class="project hidden">
+                    <img src="public/img/atmos.webp"
+                        alt="Page d’erreur 404 personnalisée pour un site météo avec design convivial et illustration">
+                    <p class="project-caption">Page 404 introuvable - design UI et intégration front-end pour un site
+                        météo</p>
+                </div>
+
+            </div>
+
+            <button class="link-see-button" id="seeMoreBtn" type="button">
+                <i class="bi bi-arrow-down-square-fill" aria-hidden="true"></i> Voir plus
+            </button>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <h1 class="title-footer" id="contact">Me contacter</h1>
+
+        <nav class="contact-nav">
+            <ul>
+                <li><a href="mailto:roxana.frontend@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank"
+                        rel="noopener">roxana.frontend@gmail.com <i class="bi bi-envelope-fill"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/RoxanaElena09" aria-label="Visit my GitHub profile">
+                        GitHub <i class="bi bi-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/roxana-elena-popescu/" aria-label="Visit my Linkedin profile">
+                        Linkedin <i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul>
+                <li><a href="legal_notice_fr.html">Mentions légales</a></li>
+                <li><a href="privacy_policy_fr.html">Politique de confidentialité</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /* ---------- Typing effect loop ---------- */
+
+            const typingElement = document.getElementById("typing-name");
+
+            const words = [
+                "Roxana",
+
+            ];
+
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeEffect() {
+
+                const currentWord = words[wordIndex];
+
+                if (!isDeleting) {
+                    typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+
+                    if (charIndex === currentWord.length) {
+                        isDeleting = true;
+                        setTimeout(typeEffect, 1400);
+                        return;
+                    }
+
+                } else {
+                    typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+
+                    if (charIndex === 0) {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                    }
+                }
+
+                setTimeout(typeEffect, isDeleting ? 70 : 120);
+            }
+
+            typeEffect();
+
+            /* ---------- Cards flip ---------- */
+
+            const cards = document.querySelectorAll(".card-flip");
+
+            cards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    e.stopPropagation();
+
+                    cards.forEach(c => {
+                        if (c !== card) c.classList.remove("is-flipped");
+                    });
+
+                    card.classList.toggle("is-flipped");
+                });
+            });
+
+            document.addEventListener("click", () => {
+                cards.forEach(card => card.classList.remove("is-flipped"));
+            });
+
+            /* ---------- See more projects ---------- */
+
+            const btn = document.getElementById("seeMoreBtn");
+            const projects = document.querySelector(".projects");
+
+            if (btn && projects) {
+
+                btn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    projects.classList.add("is-open");
+                    btn.style.display = "none";
+                });
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>

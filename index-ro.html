@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>RoxanaWeb | Portofoliu Dezvoltatoare Front-End</title>
+  <meta name="description"
+    content="RoxanaWeb este portofoliul Roxanei, dezvoltatoare front-end care creează site-uri web curate, responsive și accesibile cu HTML, CSS, JavaScript, Vue.js și Figma.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Roxana Popescu">
+  <meta name="keywords"
+    content="RoxanaWeb, Roxana Popescu, dezvoltatoare front-end, portofoliu front-end, HTML, CSS, JavaScript, Vue.js, responsive web design, site-uri accesibile, dezvoltator web">
+  <link rel="canonical" href="https://roxanaweb.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RoxanaWeb | Dezvoltatoare Front-End">
+  <meta property="og:description"
+    content="Portofoliul Roxanei, dezvoltatoare front-end care creează site-uri web curate, responsive și accesibile.">
+  <meta property="og:url" content="https://roxanaweb.com/">
+  <meta property="og:image" content="https://roxanaweb.com/public/img/logo.jpg">
+  <meta property="og:image:alt" content="Previzualizare logo RoxanaWeb">
+  <meta property="og:site_name" content="RoxanaWeb">
+  <meta property="og:locale" content="ro_RO">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RoxanaWeb | Dezvoltatoare Front-End">
+  <meta name="twitter:description"
+    content="Portofoliul Roxanei, dezvoltatoare front-end care creează site-uri web curate, responsive și accesibile.">
+  <meta name="twitter:image" content="https://roxanaweb.com/public/img/logo.jpg">
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="public/img/logo.png" alt="Pagina principală" class="logo"></a></li>
+        <li><a href="#about">Despre mine</a></li>
+        <li><a href="#skills">Competențe</a></li>
+        <li><a href="#projects">Proiecte</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- LANG SWITCH -->
+        <li class="lang-switch">
+          <a href="index.html" aria-label="English version">🇬🇧</a>
+          <a href="index-fr.html" aria-label="Version française">🇫🇷</a>
+          <a href="index-ro.html" aria-label="Versiune română">🇷🇴</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Salut, eu sunt <span class="typing" id="typing-name"></span>
+        </h1>
+        <p class="hero-subtitle">Dezvoltatoare Front-End</p>
+        <a href="mailto:roxana.frontend@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank"
+          rel="noopener" class="link-email-button"><i class="bi bi-envelope-fill" aria-hidden="true"></i>Hai să lucrăm
+          împreună</a>
+      </div>
+
+      <img src="public/img/moi.png" alt="" class="me" aria-hidden="true">
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section about-me" id="about">
+      <h2 class="titre-section">Despre mine</h2>
+      <p class="p-about-me">Am descoperit dezvoltarea web din curiozitate —
+        și m-am îndrăgostit rapid de ideea de a transforma ideile
+        în site-uri reale și interactive.
+        Pasionată de front-end, mereu în proces de învățare,
+        și vorbind mai multe limbi, îmi construiesc drumul pas cu pas.</p>
+      <a href="public/cv/cv_roxana_popescu_ro.pdf" class="link-cv-button"> <i
+          class="bi bi-arrow-down-square-fill" aria-hidden="true"></i>Descarcă CV-ul </a>
+    </section>
+
+    <section class=" section section-bg values">
+      <div class="container">
+        <h2 class="titre-section">Valori</h2>
+        <div class="cards">
+
+          <div class="card-flip">
+            <div class="card-inner">
+
+              <div class="card-front">
+                <i class="ph ph-code" aria-hidden="true"></i>
+                <h3 class="title-card">Cod curat</h3>
+              </div>
+
+              <div class="card-back" aria-hidden="true">
+                <p>HTML semantic, CSS reutilizabil și structură ușor de întreținut.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card-flip">
+            <div class="card-inner">
+
+              <div class="card-front">
+                <i class="ph ph-devices" aria-hidden="true"></i>
+                <h3 class="title-card">Responsive</h3>
+              </div>
+
+              <div class="card-back" aria-hidden="true">
+                <p>Mobile-first, layout-uri flexibile și design adaptiv.</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- fin .card-flip -->
+
+          <div class="card-flip">
+            <div class="card-inner">
+
+              <div class="card-front">
+                <i class="bi bi-person-wheelchair" aria-hidden="true"></i>
+                <h3 class="title-card">Accesibilitate</h3>
+              </div>
+
+              <div class="card-back" aria-hidden="true">
+                <p>Marcaj accesibil, navigare cu tastatura și design incluziv.</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- fin .card-flip -->
+
+        </div>
+        <!-- fin .cards -->
+      </div>
+
+    </section>
+
+    <section class="section skills" id="skills">
+      <h2 class="titre-section">Competențe</h2>
+
+      <ul class="skills-grid" role="list">
+        <li class="skill">
+          <img src="public/svg/html.svg" alt="Logo HTML5" loading="lazy">
+          <span>HTML5</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/css.svg" alt="Logo CSS3" loading="lazy">
+          <span>CSS3</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/bootstrap.svg" alt="Logo Bootstrap" loading="lazy">
+          <span>Bootstrap</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/javascript.svg" alt="Logo JavaScript" loading="lazy">
+          <span>JavaScript</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/vuedotjs.svg" alt="Logo Vuejs" loading="lazy">
+          <span>VueJS</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/github.svg" alt="Logo Git" loading="lazy">
+          <span>Git</span>
+        </li>
+
+        <li class="skill">
+          <img src="public/svg/figma.svg" alt="Logo Figma" loading="lazy">
+          <span>Figma</span>
+        </li>
+
+      </ul>
+    </section>
+
+
+    <section class="section section-bg how" id="how">
+      <h2 class="titre-section">Cum lucrez</h2>
+      <p class="how-lead">Procesul meu pas cu pas pentru a construi interfețe curate și responsive.</p>
+
+      <ol class="timeline" role="list">
+        <li class="timeline__item">
+          <h3 class="titre-work">Înțeleg și planific</h3>
+          <p>Analizez nevoile, structurez conținutul și definesc layout-ul.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Creez designul</h3>
+          <p>Creez wireframe-uri simple și mă concentrez pe ierarhie și spațiere.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Construiesc interfețe</h3>
+          <p>Transform designul în interfețe curate și responsive.</p>
+        </li>
+
+        <li class="timeline__item">
+          <h3 class="titre-work">Testez și îmbunătățesc</h3>
+          <p>Testez pe diferite dispozitive și îmbunătățesc fiecare detaliu.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="titre-section">Proiectele mele</h2>
+
+      <div class="projects">
+
+        <div class="project">
+          <img src="public/img/project1.webp"
+            alt="Interfață simplă de login realizată cu HTML și CSS, cu layout curat și design de formular">
+          <p class="project-caption">Pagină simplă de login realizată cu HTML și CSS pentru a exersa bazele front-end.</p>
+        </div>
+
+        <div class="project hidden">
+          <img src="public/img/project2.webp"
+            alt="Secțiune hero modernă cu navigație fixă, buton call-to-action și layout responsive">
+          <p class="project-caption">
+            Secțiune hero elegantă realizată cu HTML și CSS, cu navigație fixă, call-to-action și design modern.
+          </p>
+        </div>
+
+        <div class="project hidden">
+          <img src="public/img/atmos.webp"
+            alt="Pagină de eroare 404 personalizată pentru un site meteo cu design prietenos și ilustrație">
+          <p class="project-caption">Pagină 404 - design UI și integrare front-end pentru un site meteo</p>
+        </div>
+
+      </div>
+
+      <button class="link-see-button" id="seeMoreBtn" type="button">
+        <i class="bi bi-arrow-down-square-fill" aria-hidden="true"></i> Vezi mai mult
+      </button>
+    </section>
+
+  </main>
+
+  <footer>
+    <h1 class="title-footer" id="contact">Contactează-mă</h1>
+
+    <nav class="contact-nav">
+      <ul>
+        <li><a href="mailto:roxana.frontend@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank"
+            rel="noopener">roxana.frontend@gmail.com <i class="bi bi-envelope-fill" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/RoxanaElena09" aria-label="Visit my GitHub profile">
+            GitHub <i class="bi bi-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/roxana-elena-popescu/" aria-label="Visit my Linkedin profile">
+        Linkedin    <i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li><a href="legal_notice_ro.html">Termeni legali</a></li>
+        <li><a href="privacy_policy_ro.html">Politica de confidențialitate</a></li>
+      </ul>
+    </nav>
+
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const typingElement = document.getElementById("typing-name");
+
+      const words = ["Roxana"];
+
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+
+        const currentWord = words[wordIndex];
+
+        if (!isDeleting) {
+          typingElement.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+
+          if (charIndex === currentWord.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1400);
+            return;
+          }
+
+        } else {
+          typingElement.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+
+          if (charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+        }
+
+        setTimeout(typeEffect, isDeleting ? 70 : 120);
+      }
+
+      typeEffect();
+
+      const cards = document.querySelectorAll(".card-flip");
+
+      cards.forEach(card => {
+        card.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          cards.forEach(c => {
+            if (c !== card) c.classList.remove("is-flipped");
+          });
+
+          card.classList.toggle("is-flipped");
+        });
+      });
+
+      document.addEventListener("click", () => {
+        cards.forEach(card => card.classList.remove("is-flipped"));
+      });
+
+      const btn = document.getElementById("seeMoreBtn");
+      const projects = document.querySelector(".projects");
+
+      if (btn && projects) {
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+
+          projects.classList.add("is-open");
+          btn.style.display = "none";
+        });
+
+      }
+
+    });
+  </script>
+</body>
+
+</html>
