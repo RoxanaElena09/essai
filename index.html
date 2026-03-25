@@ -5,47 +5,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>RoxanaWeb | Front-End Developer Portfolio</title>
+  <title>Front-End Developer Portfolio | Roxana Popescu</title>
   <meta name="description"
-    content="RoxanaWeb is the portfolio of Roxana, a front-end developer building clean, responsive and accessible websites with HTML, CSS, JavaScript, Vue.js and Figma.">
+    content="Portfolio of Roxana Popescu, a front-end developer building clean, responsive and accessible websites with HTML, CSS, JavaScript, Vue.js and Figma.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Roxana Popescu">
-  <meta name="keywords"
-    content="RoxanaWeb, Roxana Popescu, front-end developer, front-end developer portfolio, HTML, CSS, JavaScript, Vue.js, responsive web design, accessible websites, web developer">
+  <meta name="theme-color" content="#02153D">
+
   <link rel="canonical" href="https://roxanaweb.com/">
 
+  <link rel="alternate" hreflang="en" href="https://roxanaweb.com/">
+  <link rel="alternate" hreflang="fr" href="https://roxanaweb.com/index-fr.html">
+  <link rel="alternate" hreflang="ro" href="https://roxanaweb.com/index-ro.html">
+  <link rel="alternate" hreflang="x-default" href="https://roxanaweb.com/">
+
   <meta property="og:type" content="website">
-  <meta property="og:title" content="RoxanaWeb | Front-End Developer">
+  <meta property="og:title" content="Front-End Developer Portfolio | Roxana Popescu">
   <meta property="og:description"
-    content="Portfolio of Roxana, a front-end developer creating clean, responsive and accessible websites.">
+    content="Discover the portfolio of Roxana Popescu, a front-end developer creating clean, responsive and accessible websites.">
   <meta property="og:url" content="https://roxanaweb.com/">
-  <meta property="og:image" content="https://roxanaweb.com/public/img/og.png">
-  <meta property="og:image:alt" content="Preview of RoxanaWeb portfolio website">
+  <meta property="og:image" content="https://roxanaweb.com/public/img/og.webp">
+  <meta property="og:image:alt" content="Preview of Roxana Popescu's portfolio website">
   <meta property="og:site_name" content="RoxanaWeb">
   <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RoxanaWeb | Front-End Developer">
+  <meta name="twitter:title" content="Front-End Developer Portfolio | Roxana Popescu">
   <meta name="twitter:description"
-    content="Portfolio of Roxana, a front-end developer creating clean, responsive and accessible websites.">
-  <meta name="twitter:image" content="https://roxanaweb.com/public/img/og.png">
+    content="Discover the portfolio of Roxana Popescu, a front-end developer creating clean, responsive and accessible websites.">
+  <meta name="twitter:image" content="https://roxanaweb.com/public/img/og.webp">
+
+  <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
-  <link rel="icon" type="image/x-icon" href="/public/img/favicon.ico">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Roxana Popescu",
+    "url": "https://roxanaweb.com/",
+    "jobTitle": "Front-End Developer",
+    "sameAs": [
+      "https://github.com/RoxanaElena09",
+      "https://www.linkedin.com/in/roxana-elena-popescu/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
   <header>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
-        <li><a href="index.html"><img src="public/img/logo.png" alt="Home page" class="logo"></a></li>
+        <li><a href="index.html" aria-current="page"><img src="public/img/logo.png" alt="RoxanaWeb home page"
+              class="logo"></a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -53,11 +77,11 @@
 
         <!-- LANG SWITCH -->
         <li class="lang-switch">
-          <a href="index.html" aria-label="English version">
+          <a href="index.html" aria-label="English version" aria-current="true">
             <span class="fi fi-gb" aria-hidden="true"></span>
           </a>
           <a href="index-fr.html" aria-label="Version française">
-             <span class="fi fi-fr" aria-hidden="true"></span>
+            <span class="fi fi-fr" aria-hidden="true"></span>
           </a>
           <a href="index-ro.html" aria-label="Versiune in romana">
             <span class="fi fi-ro" aria-hidden="true"></span>
@@ -78,8 +102,7 @@
           together</a>
       </div>
 
-      <img src="public/img/moi.png" alt="" class="me" aria-hidden="true">
-
+      <img src="public/img/moi.webp" alt="" class="me" aria-hidden="true" width="200" height="200" fetchpriority="high">
     </div>
   </header>
 
@@ -87,11 +110,12 @@
 
     <section class="section about-me" id="about">
       <h2 class="titre-section">About me</h2>
-      <p class="p-about-me">I discovered web development through curiosity —
-        and quickly fell in love with turning ideas
-        into real, living websites.
-        Passionate about front-end, always learning,
-        and speaking multiple languages, I’m building my path step by step..</p>
+      <p class="p-about-me">Curious by nature, I discovered web development and quickly became passionate about turning
+        ideas into real websites.
+        As a front-end developer, I build clean, responsive and accessible interfaces with HTML, CSS, JavaScript and
+        Vue.js.
+        I learn continuously, pay attention to detail, and create experiences that are both functional and
+        user-friendly.</p>
       <a href="public/cv/cv_roxana_popescu_en.pdf" class="link-cv-button"> <i class="bi bi-arrow-down-square-fill"
           aria-hidden="true"></i>Download my CV </a>
     </section>
@@ -201,7 +225,7 @@
       <h2 class="titre-section">How I work</h2>
       <p class="how-lead">My step-by-step process to build clean and responsive interfaces.</p>
 
-      <ol class="timeline" role="list">
+      <ol class="timeline" >
         <li class="timeline__item">
           <h3 class="titre-work">Understand and plan</h3>
           <p>I analyze the needs, structure the content and define the layout.</p>
@@ -266,7 +290,7 @@
   <footer>
     <h1 class="title-footer" id="contact">Get in touch</h1>
 
-    <nav class="contact-nav">
+    <nav class="contact-nav" aria-label="Contact navigation">
       <ul>
         <li><a href="mailto:roxana.frontend@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank"
             rel="noopener">roxana.frontend@gmail.com <i class="bi bi-envelope-fill" aria-hidden="true"></i></a></li>
@@ -279,7 +303,7 @@
       </ul>
     </nav>
 
-    <nav>
+    <nav aria-label="Legal links">
       <ul>
         <li><a href="legal_notice.html">Legal Notice</a></li>
         <li><a href="privacy_policy.html">Privacy Policy</a></li>
