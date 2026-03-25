@@ -466,7 +466,7 @@ section {
 }
 
 
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
   .me {
     display: none;
   }
@@ -567,7 +567,7 @@ section {
 }
 
 .legal-content {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 150px;
   padding-right: 150px;
